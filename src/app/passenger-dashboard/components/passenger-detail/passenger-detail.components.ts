@@ -47,6 +47,7 @@ export class PassengerDetailComponents implements OnChanges{
 
   ngOnChanges(changes: SimpleChanges) {
     console.log(changes)
+    console.log('hello')
     if(changes["detail"]){
       this.detail = Object.assign({}, changes["detail"].currentValue)
     }
